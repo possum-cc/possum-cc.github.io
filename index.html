@@ -88,4 +88,6 @@
         console.log(url)
         document.getElementsByClassName('fill')[0].style.backgroundImage = 'url('+url+')';
     }
+    if (document.addEventListener) {document.addEventListener('KeyUp', keydownHandler, false);}
+    function keydownHandler(e) {if (e.keyCode == 32) {newimage();}}
   </script>
